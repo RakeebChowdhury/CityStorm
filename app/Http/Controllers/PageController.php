@@ -21,14 +21,10 @@ class PageController extends Controller
 
       public function search(Request $request, $keyword){
 
-        // return $request->search;
-        // https://api.unsplash.com/photos/?client_id=HDrbePOJ5-23KP-EKrkSJ1sl5QNY58qzw9jyeiu6Ry0
-        // 'https://api.unsplash.com/search/photos?query=london&client_id=HDrbePOJ5-23KP-EKrkSJ1sl5QNY58qzw9jyeiu6Ry0'
-
         //Get search term
         // $search = $request->search;
         $search = $keyword;
-        
+
         //Use API key to get correct data
         $client = new Client();
         $res = $client->request('GET', "https://api.unsplash.com/search/photos?query=".urlencode($search)."&per_page=30&client_id=".env("UNSPLASH_KEY")."", ['verify' => '/MAMP/conf/php7.2.14/cacert.pem']);
