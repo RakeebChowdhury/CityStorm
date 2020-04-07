@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+@import "variables";
+@import "grid";
+@import "site";
+@import "admin";
+@import "forms";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // background: purple;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    // background: -webkit-linear-gradient(bottom left, #72dfe9 0%, #d69cfe 100%);
+    // background: -o-linear-gradient(bottom left, #72dfe9 0%, #d69cfe 100%);
+    // background: linear-gradient(to top right, #72dfe9 0%, #d69cfe 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: -webkit-linear-gradient(bottom left, #72dfe9 0%, #d69cfe 100%);
+    background: -o-linear-gradient(bottom left, #72dfe9 0%, #d69cfe 100%);
+    background: linear-gradient(to top right, #72dfe9 0%, #d69cfe 100%) !important;
+}

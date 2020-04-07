@@ -1,0 +1,132 @@
+#admin-section {
+    #projects {}
+
+    table {
+        display: table;
+        width: 100%;
+        margin: 20px 0;
+
+        thead {
+            background: grey;
+
+            th {
+                border: 1px solid #000;
+                color: white;
+            }
+        }
+
+        tbody {
+            td {
+                border: 1px solid #000;
+                text-align: center;
+
+                .edit-btn {
+                    font-size: 12px;
+                    padding: 10px 20px;
+                    background: green;
+                    display: inline-block;
+                    border-radius: 3px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        td,
+        th {
+            padding: 10px 20px;
+        }
+    }
+    background: #ebebf9 !important;
+    margin: 5vh;
+    height: 90vh;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #191f5d;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+
+    h6 {
+        color: #949eb6;
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #sidemenu {
+        float: left;
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        color: #3f4658;
+        overflow: scroll;
+
+        .logo {
+            width: 100%;
+            height: 200px;
+        }
+
+        nav {
+            a {
+                padding: 0 20px 20px;
+                color: #3f4658;
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: #b8bed0;
+                display: inline-block;
+
+                &.active {
+                    color: #3f4658;
+
+                    .fa {
+                        margin-right: 20px;
+                        color: #7c83ff;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #content-area {
+        height: 100%;
+        float: left;
+        background: #fafafd;
+        width: calc(100% - 200px);
+        display: inline-block;
+        overflow: scroll;
+        padding: 20px;
+
+        .box {
+            background: white;
+            border-radius: 20px;
+            min-height: 200px;
+            box-shadow: 0 10px 20px 0 rgba(83,101,148,0.05);
+            transition: all 0.6s ease-in-out;
+            padding: 20px;
+        }
+    }
+
+    .projects-total,
+    .total-imgs {
+        h1 {
+            text-align: center;
+        }
+
+        .large-number {
+            font-size: 5rem;
+            text-align: center;
+            display: block;
+        }
+    }
+}
